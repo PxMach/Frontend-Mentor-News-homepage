@@ -198,22 +198,33 @@ main {
 .seven div span {
    color: hsl(236, 13%, 42%);
 }
-
-/* .attribution {
-            font-size: 11px;
-            text-align: center;
-         }
-         .attribution a {
-            color: hsl(228, 45%, 44%);
-         } */
+/* Footer */
+.attribution {
+   font-size: 11px;
+   text-align: center;
+   margin-top: 30px;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
 
 @media (max-width: 900px) {
-   /* header {
+   header {
+      position: relative;
       display: flex;
       justify-content: space-between;
       margin: 60px 0px 40px;
       align-items: center;
-      width: 375px;
+      width: 300px;
+   }
+   header nav {
+      position: absolute;
+      background-color: wheat;
+      width: 15px;
+      height: 15px;
+      padding: 20px;
+      cursor: pointer;
+      right: 0;
    }
 
    header nav ul {
@@ -223,14 +234,53 @@ main {
       color: hsl(236, 13%, 42%);
    }
 
-   ul li a {
-      text-decoration: none;
-      color: hsl(236, 13%, 42%);
-   } */
-   /* main {
+   main {
       display: flex;
       gap: 20px;
       flex-direction: column;
-      width: 375px;
-   } */
+      width: 300px;
+   }
+
+   .one {
+      max-width: 350px;
+      grid-column-start: 1;
+      grid-column-end: 3;
+   }
+
+   .two {
+      width: 100%;
+   }
+
+   .two h1 {
+      width: 250px;
+      font-weight: 800;
+   }
+
+   .three p:first-child {
+      font-size: 13px;
+      margin-bottom: 10px;
+   }
+
+   .four {
+      height: 410px;
+   }
+
+   .five div span {
+      font-size: 14px;
+      color: hsl(236, 13%, 42%);
+   }
+
+   /* Six */
+
+   .six div span {
+      font-size: 14px;
+      color: hsl(236, 13%, 42%);
+   }
+
+   /* seven */
+
+   .seven div span {
+      font-size: 14px;
+      color: hsl(236, 13%, 42%);
+   }
 }
