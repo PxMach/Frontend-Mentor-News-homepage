@@ -210,7 +210,6 @@ main {
 
 @media (max-width: 900px) {
    header {
-      position: relative;
       display: flex;
       justify-content: space-between;
       margin: 60px 0px 40px;
@@ -219,22 +218,37 @@ main {
    }
    header nav {
       position: absolute;
-      background-color: wheat;
-      width: 15px;
-      height: 15px;
-      padding: 20px;
+      z-index: 1;
+      background-color: rgb(196, 192, 192);
       cursor: pointer;
+      top: 0px;
+      right: 0;
+      width: 200px;
+      height: 420px;
+   }
+   nav img {
+      position: absolute;
       right: 0;
    }
-
    header nav ul {
-      display: none;
+      position: absolute;
+      top: 120px;
+      left: 20px;
+      display: block;
       gap: 20px;
       list-style: none;
       color: hsl(236, 13%, 42%);
    }
+   ul li {
+      margin-bottom: 10px;
+   }
+   ul li a {
+      color: black;
+   }
 
    main {
+      position: static;
+      z-index: 0;
       display: flex;
       gap: 20px;
       flex-direction: column;
