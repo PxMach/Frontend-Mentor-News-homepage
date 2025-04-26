@@ -34,7 +34,9 @@ ul li a {
    text-decoration: none;
    color: hsl(236, 13%, 42%);
 }
-
+ul li a:hover {
+   color: hsl(5, 85%, 63%);
+}
 /* Main */
 main {
    display: grid;
@@ -89,7 +91,13 @@ main {
    color: hsl(240, 100%, 5%);
    font-weight: 600;
 }
-
+.three p:last-child:hover {
+   background-color: hsl(240, 100%, 5%);
+   color: hsl(36, 100%, 99%);
+}
+.three p:last-child a:hover {
+   color: hsl(36, 100%, 99%);
+}
 .four {
    grid-column-start: 3;
    grid-column-end: 3;
@@ -112,7 +120,10 @@ main {
 .four div p {
    margin-bottom: 10px;
 }
-
+.four div p:hover {
+   color: hsl(35, 77%, 62%);
+   cursor: pointer;
+}
 .four div span {
    color: hsl(236, 13%, 42%);
    font-size: 15px;
@@ -142,7 +153,10 @@ main {
    font-weight: 700;
    margin-bottom: 10px;
 }
-
+.five div p:hover {
+   cursor: pointer;
+   color: hsl(5, 85%, 63%);
+}
 .five div span {
    color: hsl(236, 13%, 42%);
 }
@@ -167,6 +181,10 @@ main {
    color: hsl(240, 100%, 5%);
    font-weight: 700;
    margin-bottom: 10px;
+}
+.six div p:hover {
+   cursor: pointer;
+   color: hsl(5, 85%, 63%);
 }
 
 .six div span {
@@ -193,6 +211,10 @@ main {
    color: hsl(240, 100%, 5%);
    font-weight: 700;
    margin-bottom: 10px;
+}
+.seven div p:hover {
+   cursor: pointer;
+   color: hsl(5, 85%, 63%);
 }
 
 .seven div span {
