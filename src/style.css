@@ -208,7 +208,7 @@ main {
    color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
    header {
       display: flex;
       justify-content: space-between;
@@ -285,20 +285,8 @@ main {
       height: 410px;
    }
 
-   .five div span {
-      font-size: 14px;
-      color: hsl(236, 13%, 42%);
-   }
-
-   /* Six */
-
-   .six div span {
-      font-size: 14px;
-      color: hsl(236, 13%, 42%);
-   }
-
-   /* seven */
-
+   .five div span,
+   .six div span,
    .seven div span {
       font-size: 14px;
       color: hsl(236, 13%, 42%);
