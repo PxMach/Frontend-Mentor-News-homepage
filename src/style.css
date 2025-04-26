@@ -207,6 +207,12 @@ main {
 .attribution a {
    color: hsl(228, 45%, 44%);
 }
+#open-menu {
+   display: none;
+}
+#close-menu {
+   display: none;
+}
 
 @media (max-width: 500px) {
    header {
@@ -218,9 +224,11 @@ main {
    }
    #open-menu {
       cursor: pointer;
+      display: block;
    }
    #close-menu {
       cursor: pointer;
+      display: block;
    }
    header nav {
       display: none;
