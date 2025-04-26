@@ -216,11 +216,17 @@ main {
       align-items: center;
       width: 300px;
    }
+   #open-menu {
+      cursor: pointer;
+   }
+   #close-menu {
+      cursor: pointer;
+   }
    header nav {
+      display: none;
       position: absolute;
       z-index: 1;
       background-color: rgb(196, 192, 192);
-      cursor: pointer;
       top: 0px;
       right: 0;
       width: 200px;
