@@ -37,6 +37,12 @@ ul li a {
 ul li a:hover {
    color: hsl(5, 85%, 63%);
 }
+#open-menu {
+   display: none;
+}
+#close-menu {
+   display: none;
+}
 /* Main */
 main {
    display: grid;
@@ -229,14 +235,8 @@ main {
 .attribution a {
    color: hsl(228, 45%, 44%);
 }
-#open-menu {
-   display: none;
-}
-#close-menu {
-   display: none;
-}
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
    header {
       display: flex;
       justify-content: space-between;
@@ -251,6 +251,9 @@ main {
    #close-menu {
       cursor: pointer;
       display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
    }
    header nav {
       display: none;
@@ -259,8 +262,11 @@ main {
       background-color: rgb(196, 192, 192);
       top: 0px;
       right: 0;
-      width: 200px;
-      height: 420px;
+      width: 250px;
+      height: 800px;
+   }
+   #nav {
+      position: fixed;
    }
    nav img {
       position: absolute;
