@@ -13,7 +13,18 @@ body {
    flex-direction: column;
    align-items: center;
 }
-
+body.nav-shown::before {
+   content: "";
+   position: fixed; /* Couvre toute la page */
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.3); /* Overlay léger */
+   pointer-events: none; /* Empêche les interactions */
+   z-index: 10; /* S'assure que l'overlay est bien visible */
+}
+nav {
+   z-index: 100; /* Le menu reste au-dessus de l’overlay */
+}
 /* Header */
 header {
    display: flex;
@@ -22,7 +33,9 @@ header {
    align-items: center;
    width: 1000px;
 }
-
+#nav {
+   display: flex;
+}
 header nav ul {
    display: flex;
    gap: 20px;

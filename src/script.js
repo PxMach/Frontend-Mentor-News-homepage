@@ -4,25 +4,10 @@ const openMenu = document.getElementById("open-menu");
 const closeMenu = document.getElementById("close-menu");
 const body = document.querySelector(".body");
 
-function openClick() {
-   if (nav.style.display === "none" || nav.style.display === "") {
-      body.style.opacity = 0.6;
-      nav.style.display = "block";
-      nav.style.opacity = 1;
-   } else {
-      nav.style.display = "none";
-      body.style.opacity = 1;
-   }
+function toggleNav() {
+   document.body.classList.toggle("nav-shown");
+   nav.style.display = nav.style.display === "block" ? "none" : "block";
 }
 
-openMenu.addEventListener("click", openClick);
-
-function closeClick() {
-   if (nav.style.display === "block") {
-      nav.style.display = "none";
-      body.style.opacity = 1;
-   } else {
-      nav.style.display = "block";
-   }
-}
-closeMenu.addEventListener("click", closeClick);
+openMenu.addEventListener("click", toggleNav);
+closeMenu.addEventListener("click", toggleNav);
